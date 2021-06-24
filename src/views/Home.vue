@@ -1,5 +1,5 @@
 <template>
- <div class="about" style="height: 100vh;">
+ <div class="home" style="height: 100vh;">
     <div  :style="headerStyles" class="header">
       <img class="logo" src="https://www.nieuwsbrievenrotterdam.nl/images/logo_gemeente_rotterdam_2021.png" alt="Logo van de Gemeente Rotterdam"/>
       <div class="mijn-loket">
@@ -69,7 +69,7 @@ import "firebase/database"
     }
   }
 })
-export default class About extends Vue {
+export default class Home extends Vue {
   colorValue: any = 0;
   database: any;
   firebaseConfig: any = {
@@ -118,7 +118,7 @@ export default class About extends Vue {
 
 <style lang="less" scoped>
 
-  .about {
+  .home {
     background: black;
 height: fit-content;
   }
